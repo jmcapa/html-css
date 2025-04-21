@@ -48,8 +48,60 @@ header > p > a {
 }
 
 section#imagem01 {
-    height: 100vh;
+    position: relative;
+    height: 60vh;
     background: url('../imagens/background001.jpg') right center no-repeat fixed;
     background-color: black;
     background-size: cover;
+}
+
+section#imagem02 {
+    position: relative;
+    height: 60vh;
+    background: url('../imagens/background002.jpg') right center no-repeat fixed;
+    background-color: black;
+    background-size: cover;
+}
+
+.poema  {
+    font-family: var(--font-destaque);
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 7%;
+}
+
+.poema > p {
+    font-size: 3.5vw;
+    padding-top: 20px;
+}
+
+section.imagem > p {
+    position: absolute;
+    top:20%;
+    left: 7%;
+    display: inline-block;
+    font-family: var(--font-destaque);
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    padding: 5px;
+    font-size: 3.5vw;
+    text-shadow: 1px 1px 2px black;	
+ }
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
