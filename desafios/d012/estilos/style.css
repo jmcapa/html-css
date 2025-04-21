@@ -50,6 +50,7 @@ header > p > a {
 section#imagem01 {
     position: relative;
     height: 60vh;
+    max-height: 60vh;
     background: url('../imagens/background001.jpg') right center no-repeat fixed;
     background-color: black;
     background-size: cover;
@@ -58,6 +59,7 @@ section#imagem01 {
 section#imagem02 {
     position: relative;
     height: 60vh;
+    max-height: 60vh;
     background: url('../imagens/background002.jpg') right center no-repeat fixed;
     background-color: black;
     background-size: cover;
