@@ -47,9 +47,15 @@ header > p > a {
     font-weight: 700;
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
 section#imagem01 {
     position: relative;
-    
     min-height: 80vh;
     background: url('../imagens/background001.jpg') right center no-repeat fixed;
     background-color: black;
@@ -58,7 +64,6 @@ section#imagem01 {
 
 section#imagem02 {
     position: relative;
-
     min-height: 80vh;
     background: url('../imagens/background002.jpg') right center no-repeat fixed;
     background-color: black;
