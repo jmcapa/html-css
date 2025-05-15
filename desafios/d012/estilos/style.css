@@ -18,10 +18,17 @@
     font-size: 1em;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--font-padrao);
 }
 
 header > h1 {
@@ -29,18 +36,13 @@ header > h1 {
     font-variant: small-caps;
     font-family: var(--font-padrao);
     font-size: 10vw;
-    text-align: center;
-    color: white;
 }
 
 header > p {
     padding-bottom: 50px;
-    font-family: sans-serif;
-    color: white;
-    text-align: center;
 }
 
-header > p > a {
+a {
     color: white;
     text-decoration: none;
     font-family: var(--font-padrao);
@@ -53,29 +55,23 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--font-destaque);
+    font-size: 3.5vw;
 }
 
 section#imagem01 {
-    position: relative;
-    min-height: 80vh;
     background: url('../imagens/background001.jpg') right center no-repeat fixed;
-    background-color: black;
     background-size: cover;
 }
 
 section#imagem02 {
-    position: relative;
-    min-height: 80vh;
     background: url('../imagens/background002.jpg') right center no-repeat fixed;
-    background-color: black;
     background-size: cover;
 }
 
 .poema  {
     font-family: var(--font-destaque);
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 7%;
+    background-color: white;
 }
 
 .poema > p {
@@ -84,32 +80,20 @@ section#imagem02 {
 }
 
 section.imagem > p {
-    position: absolute;
-    top:20%;
-    left: 7%;
     display: inline-block;
-    font-family: var(--font-destaque);
-    background-color: rgba(0, 0, 0, 0.404);
-    color: white;
     padding: 5px;
-    font-size: 3vw;
-    text-shadow: 1px 1px 2px black;	
+    background-color: rgba(0, 0, 0, 0.500);
+    text-shadow: 1px 1px 0px black;	
+    color: white;
  }
+
+a:hover {
+    text-decoration: underline;
+}
 
 footer {
     background-color: black;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding: 20px 0px;
-}
-
-footer > p > a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
+    padding: 10px 0px;
 }
